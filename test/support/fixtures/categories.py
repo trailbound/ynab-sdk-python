@@ -10,6 +10,7 @@ VALID_CATEGORIES = {
                     {
                         "id": "string",
                         "category_group_id": "string",
+                        "category_group_name": "string",
                         "name": "string",
                         "hidden": True,
                         "original_category_group_id": "string",
@@ -18,11 +19,18 @@ VALID_CATEGORIES = {
                         "activity": 0,
                         "balance": 0,
                         "goal_type": "TB",
+                        "goal_day": 0,
+                        "goal_cadence": 0,
+                        "goal_cadence_frequency": 0,
                         "goal_creation_month": "string",
                         "goal_target": 0,
                         "goal_target_month": "string",
                         "goal_percentage_complete": 0,
-                        "deleted": True,
+                        "goal_months_to_budget": 0,
+                        "goal_under_funded": 0,
+                        "goal_overall_funded": 0,
+                        "goal_overall_left": 0,
+                        "deleted": True
                     }
                 ],
             }
@@ -36,6 +44,7 @@ VALID_CATEGORY = {
         "category": {
             "id": "string",
             "category_group_id": "string",
+            "category_group_name": "string",
             "name": "string",
             "hidden": True,
             "original_category_group_id": "string",
@@ -44,11 +53,18 @@ VALID_CATEGORY = {
             "activity": 0,
             "balance": 0,
             "goal_type": "TB",
+            "goal_day": 0,
+            "goal_cadence": 0,
+            "goal_cadence_frequency": 0,
             "goal_creation_month": "string",
             "goal_target": 0,
             "goal_target_month": "string",
             "goal_percentage_complete": 0,
-            "deleted": True,
+            "goal_months_to_budget": 0,
+            "goal_under_funded": 0,
+            "goal_overall_funded": 0,
+            "goal_overall_left": 0,
+            "deleted": True
         }
     }
 }

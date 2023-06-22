@@ -54,6 +54,7 @@ class Account:
 class Category:
     id: str
     category_group_id: str
+    category_group_name: str
     name: str
     hidden: bool
     original_category_group_id: Optional[str]
@@ -73,6 +74,7 @@ class Category:
         assert isinstance(obj, dict)
         category_id = parsers.from_str(obj.get("id"))
         category_group_id = parsers.from_str(obj.get("category_group_id"))
+        category_group_name = parsers.from_str(obj.get("category_group_name"))
         name = parsers.from_str(obj.get("name"))
         hidden = parsers.from_bool(obj.get("hidden"))
         original_category_group_id = parsers.from_union(
@@ -103,6 +105,7 @@ class Category:
         return Category(
             category_id,
             category_group_id,
+            category_group_name,
             name,
             hidden,
             original_category_group_id,
